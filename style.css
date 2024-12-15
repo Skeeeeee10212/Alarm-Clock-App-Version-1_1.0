@@ -1,0 +1,90 @@
+html{
+    background-color: black;
+}
+
+body::after{
+    content:"";
+    position: absolute;
+    background-color: blueviolet;
+    width: 120px;
+    height: 120px;
+    left: 75%;
+    top: 20%;
+    filter: blur(90px);
+}
+
+body::before{
+    content:"";
+    position: absolute;
+    background-color: cyan;
+    width: 120px;
+    height: 120px;
+    left: 10%;
+    top: 80%;
+    filter: blur(90px);
+}
+
+#currenttime{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.buttons{
+    position: absolute;
+    color: black;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#addalarmBtn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    border-width: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#clearallBtn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aqua;
+    border-width: 1px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.alarmset{
+    position: absolute;
+    left: 43%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+#timeInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #088f8f;
+    width: 150%;
+}
+
+::placeholder {
+    color: black;
+    font-weight: bolder !important;
+}
+
+#minute{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #088f8f;
+}
